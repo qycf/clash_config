@@ -14,7 +14,7 @@ $httpClient.get(url, function(error, response, data){
 //let jsonData = JSON.parse(data)
 content = '当前：'+ proxy+'\n'+data
  body = {
-    title: "节点出入口信息",
+    title: "节点信息",
     content: content,
     icon: "network"
   }
