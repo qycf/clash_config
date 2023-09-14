@@ -11,9 +11,10 @@ for (let i = 0; i < nodes.length; i++) {
 let url = `http://192.168.31.109:3001/ipInfo?server=${server}`
 $httpClient.get(url, function(error, response, data){
 //let jsonData = JSON.parse(data)
+content = '当前：'+ proxy+'\n'+data
  body = {
     title: "节点信息",
-    content: data,
+    content: content,
     icon: "network"
   }
  $done(body);
